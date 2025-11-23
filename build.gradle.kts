@@ -3,4 +3,8 @@ plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.kotlin.compose) apply false
+    alias(libs.plugins.kotlin.ksp) apply false // This should already be here
+    // Add Hilt plugin here and set apply to false
+    alias(libs.plugins.hilt.android) apply false
+    kotlin("plugin.serialization") version "1.8.21"
 }
