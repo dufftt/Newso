@@ -41,7 +41,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.7"
+        kotlinCompilerExtensionVersion = "2.2.21"
     }
 }
 
@@ -66,9 +66,8 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.1")
     implementation("androidx.navigation:navigation-compose:2.6.0")
     // Hilt
-    val hilt_version = "2.51.1" // Use a recent version of Hilt
-    implementation("com.google.dagger:hilt-android:$hilt_version")
-    ksp("com.google.dagger:hilt-compiler:$hilt_version") // Changed from kapt to ksp
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler) // Changed from kapt to ksp
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0") // Also update this
 
 

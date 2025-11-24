@@ -6,5 +6,5 @@ plugins {
     alias(libs.plugins.kotlin.ksp) apply false // This should already be here
     // Add Hilt plugin here and set apply to false
     alias(libs.plugins.hilt.android) apply false
-    kotlin("plugin.serialization") version "1.8.21"
+    kotlin("plugin.serialization") version "2.2.21"
 }
